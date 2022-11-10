@@ -1,0 +1,127 @@
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
+
+
+.lista{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:50px;
+    height: 1000px;
+    border: 3px solid #495057;
+    border-radius: 0.25rem;
+  }
+  .selectCat{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  .efeito-vidro {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  .efeito-vidro:hover{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 10px;
+    width: 100%;
+    height: 275px;
+    display: flex;
+    flex-direction: row;
+    transition: 1000ms;
+  }
+
+  .container {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding-right: 0;
+    padding-left: 1%;
+    top: 0;
+  }
+
+  .show{
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .hide{
+    -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	  animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  .child {
+    width: 77.5%;
+    height: 70%;
+    background: rgba(15, 15, 15, 0.558);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* Centralizar na vertical e na horizontal */
+    position: absolute;
+    top: 19%;
+    margin: -25px 0 0 -25px; /* aplique margens superior e esquerda negativas para centralizar de verdade o elemento */
+  }  
+
+  .vidro{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+button{
+  margin: 3px;
+  float: right;
+  color:whitesmoke;
+  background-color: rgba(0, 0, 0, 0.71);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

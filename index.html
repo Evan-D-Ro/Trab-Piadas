@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>P I A D A S</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" sizes="192x192" href="https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f602.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <style rel="stylesheet" type="text/css">
+      h3{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: bold;
+      }
+      img{
+        height: 200px;
+        width: 200px;
+        border: 4px double grey;
+        margin: 25px;
+        position: fixed;
+      }
+      article{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 10px;
+        border: 1px solid black;
+        width: 96%;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        transition: 500ms;
+      }
+      span{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin-left:20%;
+      }
+
+    </style>
+</head>
+<body class="bg-light">
+    <header class="bg-dark">
+        <nav class="nav navbar-expand-sm justify-content-center align-items-center" style="height: 60px">
+          <div style="margin-right: 90px;">
+            <h3 style="margin-bottom: 0px;">| P I A D A S |</h3>
+          </div>
+            <ul class="navbar-nav justify-content-center" style="margin-right: 90px;">
+              <li class="nav-item">
+                <select id="catSelect" class="selectCat">
+                  <option selected>Categorias...</option>
+                  <option></option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <section class="lista" id="listaPiadas">
+      <article class="efeito-vidro">
+        <img src="selo.png" id="foto">
+        <span class="align-items-center">
+          <h2>TITULO</h3>
+          <p>Categoria: </p>
+          <button id="show">VER PIADA</button>
+        </span>
+      </article>
+    </section>
+
+    <div class="container">
+      <div class="child">
+        <button id="hide">FECHAR</button>
+      </div>
+    </div>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
